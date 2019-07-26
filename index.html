@@ -33,5 +33,30 @@
 
     <!-- Include Flatiron School's minified test runner to push results to Learn. -->
     <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
+    
+    
+    
+    <script>
+      const alphabet = ['a', 'b', 'c'];
+ 
+      let index = 0;
+ 
+      function onKeyDownHandler(e) {
+        const key = e.key;
+ 
+        if (key === alphabet[index]) {
+          index++;
+       
+          if (index === alphabet.length) {
+            alert("Hurray!");
+       
+            index = 0;
+          }
+        } else {
+          index = 0;
+        }
+      }
+      
+    </script>
   </body>
 </html>
